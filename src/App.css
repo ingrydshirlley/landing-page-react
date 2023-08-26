@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;600;700&family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'M PLUS 1 Code', monospace;
+  text-transform: lowercase;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  padding: 40px 0;
+  width: 100%;
+  background-color: blueviolet;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdTPUdFbjfJnED6l0sC7YkARJiM5-WTnqPqw&usqp=CAU');
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu h3 {
   color: white;
+  font-family: 'Press Start 2P', cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.menu a {
+  color: white;
+  text-decoration: none;
+  border: 3px solid white;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu a:hover{
+  color: blue;
+  transition: 1s;
+  background: white;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 50px auto;
+  justify-content: center;
+}
+
+.form h2 {
+  color: rgb(255, 255, 255);
+}
+
+.items-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 540px;
+  margin: 0px auto;
+  justify-content: space-around;
+}
+
+.items-form input[type=text] {
+  width: 48%;
+  margin: 8px 0px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.items-form input[type=submit] {
+  width: 98%;
+  margin: 8px 0px;
+  height: 30px;
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+  border: 0;
+  font-weight: bold;
+}
+
+.conteudo-single{
+  width: 50%;
+  margin-top: 40px;
+  padding: 8px 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .items-form input[type=text] {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .conteudo-single{
+    width: 100%;
   }
 }
